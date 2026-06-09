@@ -1,7 +1,7 @@
 # What I Learned Today
 
 1. Why we need a Compiler.
-1. How C source code is complied to executable [CPU readable instructions].
+1. How C source code is compiled to executable [CPU readable instructions].
 
 ---
 
@@ -20,7 +20,7 @@ Suppose we need to print Hello in our terminal but our CPU only understand 0's a
 
 *But* we can write in human readable format and then use another program to convert it into Machine codes. Yes, That where our Compiler comes in.
 
-Writing C code in a file don't make it a C code it will remain a text file if we don't follow the syntax rules of C, save that file with .c extension and use a C compiler to convert it into an executable file at can be read by CPU.
+Writing C code in a file don't make it a C code it will remain a text file if we don't follow the syntax rules of C, save that file with .c extension and use a C compiler to convert it into an executable file that can be read by CPU.
 
 ## Source code -> executable
 
@@ -53,8 +53,8 @@ It takes 3 steps to compile and then give us our executable code.
     - To test it out write : gcc -E hello.c
     - The output of the Pre-Processing step is expanded C code(stdio.h header file + our program code)
 
-2. Compiler : In this step the comipler takes the expanded C code and convert it into CPU instructions[Binary code/Machine code].
+2. Compiler : In this step the compiler takes the expanded C code and convert it into CPU instructions[Binary code/Machine code].
 
-3. Linker : Take the Machine code and the C library(In this case our standard Library) which have the complied code needed by our functions to work in our case printf compiled code is present in the C standard Library. Linker stitches everything and finally provide an executable file.
+3. Linker : Take the Machine code and the C library(In this case our standard Library) which have the compiled code needed by our functions to work in our case printf compiled code is present in the C standard Library. Linker stitches everything and finally provide an executable file.
 
 
